@@ -1,0 +1,57 @@
+{
+  "name": "protractorframework",
+  "version": "1.0.0",
+  "description": "Protractor-framework base using cucumber and selenium",
+  "main": "index.js",
+  "scripts": {
+    "test1": "echo \"Error: no test specified\" && exit 1",
+    "test2": "./node_modules/.bin/cucumber-js -p default",
+    "pretest": "webdriver-manager update && webdriver-manager start --detach",
+    "test": "tsc && protractor e2e/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedScrash/protractorFramework.git"
+  },
+  "keywords": [
+    "Protractor",
+    "Cucumber",
+    "Selenium"
+  ],
+  "author": "Omar David Bello Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedScrash/protractorFramework/issues"
+  },
+  "homepage": "https://github.com/RedScrash/protractorFramework#readme",
+  "dependencies": {
+    "@types/jasmine": "^2.5.45",
+    "@types/node": "^13.9.3",
+    "protractor": "^5.4.3"
+  },
+  "peerDependencies": {
+    "cucumber": ">= 1.3.0",
+    "protractor": ">= 3.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/cucumber": "^6.0.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-like": "^0.2.14",
+    "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0",
+    "cucumber-tsflow": "^3.2.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "cucumberConf": {
+    "version1": "1.3.3",
+    "version2": "2.3.1",
+    "version3": "3.2.1",
+    "version4": "4.2.1",
+    "version5": "5.1.0",
+    "version6": "6.0.2"
+  }
+}

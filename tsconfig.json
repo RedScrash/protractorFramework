@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "e2e",
+        "types": ["jasmine", "node"]
+    },
+    "exclude": ["node_modules"],
+}
