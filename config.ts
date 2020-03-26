@@ -10,11 +10,14 @@ export let config: Config = {
     framework: "custom",
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     directConnect: false,
+    capabilities: {
+        'browserName': 'chrome'
+    },
     specs: [
         "../src/**/*.feature"
         // "src/**/*.spect.js"
     ],
-    baseURL: 'http://localhost:8080/',
+    baseURL: 'https://angularjs.org',
     cucumberOpts: {
         require: [
             'e2e/**/*.steps.js'
